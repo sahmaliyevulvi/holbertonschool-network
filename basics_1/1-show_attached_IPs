@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#show ips
+ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
